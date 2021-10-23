@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      font-family: Kumbh Sans;
+}
+
+body {
+      margin: 0 auto;
+      max-width: 1440px;
+      background-color: hsl(185, 75%, 39%);
+}
+
+.principal {
+      height: 100vh;     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-position: right 700px top -500px, left 700px bottom -500px;
+      background-repeat: no-repeat;
+}
+
+.perfil {
+      width: 300px;
+      height: 330px;
+      box-shadow: 20px 20px 20px hsla(227, 10%, 46%, 0.185);
+      background-image: url(images/bg-pattern-card.svg);
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: 300px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+}
+
+.usuario {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+}
+.usuario img {
+      border-radius: 50%;
+      border: 5px solid white;
+}
+
+.info {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;      
+      border-top: 1px solid hsl(0, 0%, 59%);
+      text-align: center;
+}
+.info .desc {
+      font-size: 12px;
+}
+
+.desc {
+      color: hsl(227, 10%, 46%);
+}
+
+p {
+      font-weight: 700;
+      text-transform: uppercase;
+}
+
+
+@media (max-width:1440px) {
+      .principal {
+            background-position: right 500px top -500px, left 500px bottom -500px;
+           
+      }
+}
+@media (max-width:980px) {
+      .principal {
+            background-position: right 300px top -500px, left 300px bottom -500px;
+           
+      }
+}
+@media (max-width:630px) {
+      .principal {
+            background-position: right 200px top -500px, left 200px bottom -500px;
+           
+      }
+}
+@media (max-width: 400px) {
+      .principal {
+            background-position: right 100px top -500px, left 100px bottom -500px;
+           
+      }
+}
